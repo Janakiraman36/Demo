@@ -1,0 +1,26 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th style="min-width: 10px;">Edit:</th>
+                <th style="min-width: 100px;">SpkId:</th>
+                <th style="min-width: 100px;">Designation:</th>
+                <th style="min-width: 100px;">SentryId:</th>
+                <th style="min-width: 100px;">Fullname:</th>
+                <th style="min-width: 150px;">Year_range_min:</th>
+                <th style="min-width: 100px;">Year_range_max:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let post of posts'>
+                <td><a routerLink="/edit2/{{post.spkId}}" routerLinkActive="active"><mat-icon style="font-size:medium;">edit</mat-icon></a></td>
+                <td>{{ post.spkId }}</td>
+                <td>{{ post.designation}}</td>
+                <td>{{ post.sentryId }}</td>
+                <td>{{ post.fullname }}</td>
+                <td>{{ post.year_range_min }}</td>
+                <td>{{ post.year_range_max }}</td>
+            </tr>
+        </tbody>
+    </table>   
+</div> 

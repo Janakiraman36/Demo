@@ -1,0 +1,57 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Edit:</th>
+                <th style="min-width: 100px;">Id:</th>
+                <th style="min-width: 200px;">Name:</th>
+                <th style="min-width: 100px;">Designation</th>
+                <th style="min-width: 200px;">Min kilometers:</th>
+                <th style="min-width: 100px;">Max kilometers:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let data of comments'>
+                <td>
+                    <a routerLink="/edit1/{{data.id}}" routerLinkActive="active"><mat-icon style="font-size:medium;">edit</mat-icon></a>
+                </td>
+                <td>{{ data.id }}</td>
+                <td>{{ data.name }}</td>
+                <td>{{ data.designation }}</td>
+                <td>{{ data.estimated_diameter.kilometers.estimated_diameter_min }}</td>
+                <td>{{ data.estimated_diameter.kilometers.estimated_diameter_max }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Id:</th>
+                <th>Title:</th>
+                <th>Completed:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let todo of Todos'>
+                <td>{{ todo.id }}</td>
+                <td>{{ todo.title }}</td>
+                <td>{{ todo.completed }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->

@@ -1,0 +1,40 @@
+<mat-toolbar id="tool-bar" class="mat-elevation-z5">
+  <mat-toolbar-row>
+      <span>MyApp</span>
+      <span class="example-spacer"></span>
+      <button mat-button routerLink="/#" style="outline: none;">Home</button>
+      <button mat-button routerLink="/#" style="outline: none;">About</button>
+      <button mat-button routerLink="/#" style="outline: none;">Contact</button>
+      <button mat-button routerLink="/#" style="outline: none;">Service</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+      <mat-nav-list style="width:190px;">
+          <a mat-list-item routerLink="/first" style="color: white;">First</a>
+          <!-- <a mat-list-item routerLink="/second" style="color: white;">Second</a> -->
+          <a mat-list-item routerLink="/third" style="color: white;">Second</a>
+          <!-- <a mat-list-item routerLink="/edit1" style="color: white;">Edit</a> -->
+          <a mat-list-item routerLink="/fourth" style="color: white;">Third</a>
+          <!-- <a mat-list-item routerLink="/fifth" style="color: white;">fourth</a> -->
+          
+      </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <p style="height: 88vh;">
+          <router-outlet></router-outlet>
+      </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<footer class="end">
+  <span style="text-align: left;">Condition of Use  Privacy Notice</span>
+  <span class="fa fa-copyright"></span> Copyright 1997-2021 
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-whatsapp"></a>
+	<a href="#" class="fa fa-pinterest"></a>
+  <a href="#" class="fa fa-github"></a>
+</footer>
+

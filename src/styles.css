@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer-container{
+    background-color:aliceblue;
+}
+.mat-drawer{
+    background-color: lightskyblue;
+}
+.mat-elevation-z5{
+    position: relative;
+    z-index: 2;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #ffffff;
+    font-weight: 400;
+  }
+
+.mat-toolbar {
+    background:lightskyblue;
+    color: white;
+}
+
+.example-spacer{
+    flex:1 1 auto;
+}
+.end{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+.fa {  
+    width: 25px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+    border-radius: 50%;  
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
