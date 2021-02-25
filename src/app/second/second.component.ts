@@ -13,8 +13,4 @@ export class SecondComponent implements OnInit {
 
 }
 
-// this.http.get('https://jsonplaceholder.typicode.com/comments')
-//     .subscribe((Response:any)=>{
-//       this.comments = Response;
-//       console.log(Response);
-//     });
+
